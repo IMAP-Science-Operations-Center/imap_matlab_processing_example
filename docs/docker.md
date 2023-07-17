@@ -5,6 +5,8 @@ Note: for non-LASP users you must retrieve your MATLAB licensing information
 from your own institute. More information is available here:
 https://github.com/mathworks-ref-arch/matlab-dockerfile 
 
+NOTE: the --platform flag is optional for Intel macs.
+
 ```shell
 docker build -t matlab-image --platform linux/amd64 --rm . --build-arg \
 LICENSE_SERVER=27000@lasp-lmgr.colorado.edu
