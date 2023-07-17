@@ -16,6 +16,6 @@ Now we can run our image using bind mounting.
 
 ```shell
 docker run --rm -it   -e PROCESSING_DROPBOX=/opt/data/dropbox/   \
---volume="$(pwd)/container_example_data:/opt/data"   matlab-image:latest \
+--volume="$(pwd)/container_example_data:/opt/data" --platform linux/amd64  matlab-image:latest \
 "algorithm_example /opt/data/dropbox/input_manifest_20220923t000000.json"
 ```
