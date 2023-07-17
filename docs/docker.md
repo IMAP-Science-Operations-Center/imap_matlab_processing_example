@@ -6,7 +6,7 @@ from your own institute. More information is available here:
 https://github.com/mathworks-ref-arch/matlab-dockerfile 
 
 ```shell
-docker build -t matlab-image --rm . --build-arg \
+docker build -t matlab-image --platform linux/amd64 --rm . --build-arg \
 LICENSE_SERVER=27000@lasp-lmgr.colorado.edu
 ```
 
